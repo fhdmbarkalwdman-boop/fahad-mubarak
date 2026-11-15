@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "FAHDAR",
+    "slug": "fahdar",
+    "scheme": "fahdar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#050C1A",
+    "description": "فَهْدَار | FAHDAR — التطبيق الشخصي التقني لفهد مبارك. أفكارك تبدأ من هنا.",
+    "locales": {
+      "ar": "./locales/ar.json",
+      "en": "./locales/en.json"
+    },
+    "ios": {
+      "bundleIdentifier": "com.fahadmubarak.fahdar",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true,
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.fahadmubarak.fahdar",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0A1630",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["android.permission.POST_NOTIFICATIONS"],
+      "blockedPermissions": ["android.permission.RECORD_AUDIO"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "backgroundColor": "#F5F7FB",
+          "dark": { "image": "./assets/splash-icon.png", "backgroundColor": "#050C1A" }
+        }
+      ],
+      "expo-font",
+      ["expo-localization", { "supportsRTL": true }],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2C56D6",
+          "defaultChannel": "default"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "FAHDAR needs photo access to attach images to your requests and consultations.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-image",
+      "expo-web-browser",
+      "expo-updates"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "runtimeVersion": { "policy": "appVersion" },
+    "extra": {
+      "router": {},
+      "eas": {}
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div dir="rtl" style="font-family:Tahoma,Arial,sans-serif;background:#F5F7FB;padding:24px">
+  <div style="max-width:480px;margin:auto;background:#fff;border-radius:16px;padding:28px;border:1px solid #DCE1EA">
+    <h2 style="color:#0A1630;margin:0 0 8px">فَهْدَار | FAHDAR</h2>
+    <p style="color:#3A4357">طلبت استعادة كلمة المرور. أدخل هذا الرمز في التطبيق:</p>
+    <p style="font-size:30px;letter-spacing:8px;font-weight:bold;color:#2C56D6;text-align:center;margin:20px 0">{{ .Token }}</p>
+    <p style="color:#3A4357">أو افتح هذا الرابط من جوالك: <a href="{{ .ConfirmationURL }}">استعادة كلمة المرور</a></p>
+    <hr style="border:none;border-top:1px solid #ECEFF5;margin:20px 0">
+    <p dir="ltr" style="color:#6B7588;font-size:13px">Password reset code: <b>{{ .Token }}</b> — or open <a href="{{ .ConfirmationURL }}">this link</a> on your phone. If you didn't request this, ignore this email.</p>
+  </div>
+</div>
